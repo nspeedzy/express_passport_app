@@ -1,0 +1,4 @@
+# These file(s)/folder(s) will be ignored by git
+
+node_modules
+.env

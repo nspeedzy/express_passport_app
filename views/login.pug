@@ -1,0 +1,35 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Login
+        link(rel="stylesheet", href="/bootstrap/css/bootstrap.css")
+        link(rel="stylesheet", href="/css/style.css")
+        script(src="/query/jquery.js")
+        script(src="/bootstrap/js/bootstrap.js")
+        script(src="/js/script.js")
+    body
+        .container
+            .row
+                .col-lg-4.mx-auto
+                    form(action="/login", method="post", novalidate).needs-validation
+                        h1.text-center Login
+                        include partials/messages.pug
+                        .card
+                            .card-body
+                                .form-group
+                                    label(for="email") Email:
+                                    input(type="email", name="email", required)#uname.form-control
+                                    //- Feedback
+                                    p.invalid-feedback Email is invalid
+                                .form-group
+                                    label(for="password") Password:
+                                    input(type="password", name="password", required)#uname.form-control
+                                    //- Feedback
+                                    p.invalid-feedback Password is invalid
+                                .form-group
+                                    button(type="submit").btn.btn-primary.btn-block Login
+                            .card-footer
+                                p.text-center Not a member? 
+                                    a(href="/signup") Sign Up

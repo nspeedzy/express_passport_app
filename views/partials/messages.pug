@@ -1,0 +1,24 @@
+//- For error messages
+if error_msg != ''
+    div(class="alert alert-danger alert-dismssible fade show", role="alert")
+        span #{ error_msg }
+        button(type="button", data-dismiss="alert", aria-label="close").close
+            span(aria-hidden="true") &times;
+//- For success messages
+if success_msg != ''
+    div(class="alert alert-success alert-dismssible fade show", role="alert")
+        span #{ success_msg }
+        button(type="button", data-dismiss="alert", aria-label="close").close
+            span(aria-hidden="true") &times;
+//- For passport errors
+if error != ''
+    div(class="alert alert-danger alert-dismssible fade show", role="alert")
+        span #{ error }
+        button(type="button", data-dismiss="alert", aria-label="close").close
+            span(aria-hidden="true") &times;
+//- For passport successes
+if success != ''
+    div(class="alert alert-success alert-dismssible fade show", role="alert")
+        span #{ success }
+        button(type="button", data-dismiss="alert", aria-label="close").close
+            span(aria-hidden="true") &times;

@@ -1,0 +1,20 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Document
+        link(rel="stylesheet", href="/bootstrap/css/bootstrap.css")
+        link(rel="stylesheet", href="/css/style.css")
+        script(src="/query/jquery.js")
+        script(src="/bootstrap/js/bootstrap.js")
+    body
+        .container
+            .row
+                .col-lg-8.mx-auto.text-center
+                    .card
+                        .card-body
+                            h1.black You are not logged in
+                            p Start your journey by logging in
+                            a(href="/login").btn.btn-primary.btn-block Login
+                            a(href="/signup").btn.btn-success.btn-block Sign Up

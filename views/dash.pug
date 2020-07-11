@@ -1,0 +1,27 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Document
+        link(rel="stylesheet", href="/bootstrap/css/bootstrap.css")
+        link(rel="stylesheet", href="/css/style.css")
+        script(src="/query/jquery.js")
+        script(src="/bootstrap/js/bootstrap.js")
+    body
+        .container
+            .row
+                .col-lg-8.mx-auto
+                    h1.text-center.white Dashboard
+                    include partials/messages.pug
+                    .card
+                        .card-body
+                            h2.text-center Welcome #{ user.uname }
+                            p 
+                            | Hello #{ user.uname }. Welcome to the login app's dashboard.
+                            | To edit your profile, click edit. If you want to logout,
+                            | click logout
+                            br
+                            br
+                            a(href="/dashboard").float-left Edit
+                            a(href="/logout").btn.btn-primary.float-right Log Out

@@ -1,0 +1,27 @@
+{
+  "name": "express_app",
+  "version": "1.0.0",
+  "description": "This is a very simple authentication app I have built using express, passport and mongodb using [pug](http://pugjs.org) as the templating engine. Feel free to clone the repo and try it for yourself!",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "dependencies": {
+    "express": "4.17.1",
+    "passport": "0.4.1",
+    "passport-local": "1.0.0",
+    "mongoose": "5.9.22",
+    "pug": "3.0.0",
+    "express-session": "1.17.1",
+    "connect-flash": "0.1.1",
+    "bcrypt": "5.0.0"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "dotenv": "8.2.0",
+    "nodemon": "2.0.4"
+  }
+}
